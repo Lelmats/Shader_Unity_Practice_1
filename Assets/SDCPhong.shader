@@ -8,7 +8,6 @@ Shader "Custom/Phong"
         _SpecularGloss("Specular Gloss", Range(1.0, 5.0)) = 1
         _GlossSteps("GlossSteps", Range(1, 8)) = 4 
         [HDR] _RimColor("RimColor", Color) = (1, 0, 0, 1)
-        _RimPower("Rim Power", Range(0.0, 8.0)) = 1.0
     }
     SubShader
     {
