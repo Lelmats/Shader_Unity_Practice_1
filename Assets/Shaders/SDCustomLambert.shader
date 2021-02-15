@@ -2,6 +2,7 @@ Shader "Custom/SDCustomLambert"
 {
     Properties
     {
+        _MainTex("Main Texture", 2D) = "white" {}
         _Albedo("Albedo Color", Color) = (1, 1, 1, 1)
     }
 
@@ -14,7 +15,9 @@ Shader "Custom/SDCustomLambert"
         }
 
         CGPROGRAM
-        #pragma surface surf Lambert
+        #pragma surface surf CustomLambert
+
+        sampler2D _MainTex;
 
         half4 LightingCustomLambert (SurfaceOutput s, half3 lightDir, half atten)
         {
@@ -34,6 +37,8 @@ Shader "Custom/SDCustomLambert"
 
         void surf (Input IN, inout SurfaceOutput o)
         {
+            half4 texColor = tex2D(_MainTex, IN.uv_MainTex);
+            o.Albedo = texColor;
             o.Albedo = _Albedo.rgb;
         }
         ENDCG

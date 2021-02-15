@@ -40,11 +40,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: f26a3d613d580d94c9dceb9be0495be3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 98a2148cc37e4244abdefd13fdb3d636, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -61,23 +65,27 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _GlossSteps: 2.17
+    - _GlossSteps: 2.58
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
+    - _NormalStregth: 5
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _RimPower: 2.95
     - _SmoothnessTextureChannel: 0
-    - _SpecularGloss: 1.55
+    - _SpecularGloss: 1.35
     - _SpecularHighlights: 1
-    - _SpecularPower: 1.9
+    - _SpecularPower: 1.37
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Albedo: {r: 0.33268064, g: 0.33757183, b: 0.7924528, a: 1}
+    - _Albedo: {r: 0.8867924, g: 0.79309356, b: 0.6232645, a: 1}
+    - _Albedo2: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecularColor: {r: 0.6509434, g: 0.53733534, b: 0.53733534, a: 1}
+    - _RimColor: {r: 0.49056602, g: 0.38643643, b: 0.38643643, a: 1}
+    - _SpecularColor: {r: 0.4528302, g: 0.34389463, b: 0.34389463, a: 1}
   m_BuildTextureStacks: []
